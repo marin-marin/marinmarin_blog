@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as _}from"./app.95bb5be5.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"2019/我的(自)闭包 (雾).md"}'),a={name:"2019/我的(自)闭包 (雾).md"};function r(o,s,c,n,p,d){return t(),_("div")}const f=e(a,[["render",r]]);export{m as __pageData,f as default};
