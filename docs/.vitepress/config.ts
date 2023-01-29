@@ -14,8 +14,10 @@ const sidebar = {
           link: '/'
         },
         {
-          text: '2022',
+          text: '2023',
           items: [
+            { text: 'Docker学习', link: '/2023/Docker学习' },
+            { text: '前端规范制定', link: '/2023/前端规范制定' },
             { text: '从StateOfJs2022了解到的js新特性', link: '/2023/从StateOfJs2022了解到的js新特性' },
           ]
         },
