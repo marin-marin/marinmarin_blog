@@ -16,6 +16,7 @@ const sidebar = {
         {
           text: '2023',
           items: [
+            { text: 'Vue3渲染源码分析', link: '/2023/Vue3渲染源码分析' },
             { text: 'Docker学习', link: '/2023/Docker学习' },
             { text: '前端规范制定', link: '/2023/前端规范制定' },
             { text: '从StateOfJs2022了解到的js新特性', link: '/2023/从StateOfJs2022了解到的js新特性' },

@@ -1,3 +1,4 @@
+## 节点渲染
 1. createApp 创建app实例
    1. 确定使用的 `renderer` , 来判断是不是走自定义渲染 or 构造 `renderer`
    2. 调用 `renderer` 的 `createApp` 方法
@@ -6,8 +7,8 @@
 2. 执行 `app` 的 `mount` 方法
 3. 创建基于根组件的 `vnode`
    1. `createVNode` 基于传入类型判断
-      1. 传入为 **string** , `createVNode('div')` [ShapeFlags.ELEMENT]
-      2. 传入为 **obj<Component>**, `createVNode(component)` [ShapeFlags.STATEFUL_COMPONENT]
+      1. 传入为 **string** , `createVNode('div')` `ShapeFlags.ELEMENT`
+      2. 传入为 **obj{Component}**, `createVNode(component)` `ShapeFlags.STATEFUL_COMPONENT`
    2. 标准化该vnode下的 `children` - `normalizeChildren` 
       1. 根据传入的 `children` 的 `type`, 进行标准化
 4. 调用 `render`
@@ -20,4 +21,5 @@
                1. ELEMENT / FUNCTIONAL 组件不处理响应式
                2. STATEFUL_COMPONENT 处理响应式
          2. 有 old vnode, 执行 `**update**`
-      2. 
+      2. 处理子节点 `mountChildren`
+   2. 触发 `mounted` hook
